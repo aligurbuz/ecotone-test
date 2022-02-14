@@ -8,6 +8,7 @@ use App\Facades\Authenticate\ApiKey;
 use Illuminate\Support\Facades\Auth;
 use App\Exceptions\Exception as ExceptionService;
 use App\Factory\Request\Interfaces\RequestInterface;
+use App\Services\Request\Request as HttpRequest;
 
 /**
  * Class Request
@@ -32,6 +33,15 @@ class Request extends RequestManager implements RequestInterface
 	{
 		$this->binds = $binds;
 	}
+
+    /**
+     * @param array $data
+     * @return HttpRequest
+     */
+    public function picqer(array $data = []) : HttpRequest
+    {
+        return (new HttpRequest($data));
+    }
 
     /**
      * the login request it is made

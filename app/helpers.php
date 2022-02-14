@@ -33,6 +33,20 @@ if(!function_exists('entity')){
     }
 }
 
+if(!function_exists('picqer')){
+
+    /**
+     * get factory instance
+     *
+     * @param array $data
+     * @return HttpRequest
+     */
+    function picqer(array $data = []): HttpRequest
+    {
+        return Factory::request()->picqer($data);
+    }
+}
+
 if(!function_exists('httpRequest')){
 
     /**
