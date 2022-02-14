@@ -37,6 +37,7 @@ class PicqerCommand extends Command
      */
     public function handle()
     {
+        //picqer()->get();
         return 0;
     }
 }
