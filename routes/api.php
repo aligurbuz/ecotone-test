@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Products\ProductsController;
 use App\Http\Controllers\Api\Registration\RegistrationController;
 use App\Http\Controllers\Api\User\PhotosController;
 use App\Http\Controllers\Api\Timezones\TimezonesController;
@@ -38,6 +39,10 @@ Route::get('testing',function(){
 });
 
 Route::middleware([])->group(function(){
+
+    Route::get('/products', [ProductsController::class,'get']);
+    Route::post('/products', [ProductsController::class,'create']);
+    Route::put('/products', [ProductsController::class,'update']);
 
     Route::post('/registration', [RegistrationController::class,'create']);
     Route::post('/verifying', [VerifyingController::class,'verifying']);

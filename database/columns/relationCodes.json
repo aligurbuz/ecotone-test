@@ -35,6 +35,12 @@
     "permission_code": [
         "Permission"
     ],
+    "product_code": [
+        "Product"
+    ],
+    "hs_code": [
+        "Product"
+    ],
     "registration_code": [
         "Registration"
     ],

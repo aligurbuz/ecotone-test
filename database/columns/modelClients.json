@@ -17,5 +17,10 @@
     },
     "": {
         "post": "App\\Client\\Auth\\Verifying\\Post\\PostClient"
+    },
+    "Product": {
+        "get": "App\\Client\\Products\\Products\\Get\\GetClient",
+        "create": "App\\Client\\Products\\Products\\Create\\CreateClient",
+        "update": "App\\Client\\Products\\Products\\Update\\UpdateClient"
     }
 }

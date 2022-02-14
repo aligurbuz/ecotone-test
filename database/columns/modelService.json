@@ -54,5 +54,9 @@
     "Registration": {
         "controller": "Registration",
         "dir": "Registration"
+    },
+    "Product": {
+        "controller": "Products",
+        "dir": "Products"
     }
 }

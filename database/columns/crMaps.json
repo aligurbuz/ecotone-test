@@ -22,5 +22,17 @@
     "auth.verifying.create": {
         "class": "App\\Client\\Auth\\Verifying\\Create\\CreateClient",
         "model": "user"
+    },
+    "products.products.get": {
+        "class": "App\\Client\\Products\\Products\\Get\\GetClient",
+        "model": "product"
+    },
+    "products.products.create": {
+        "class": "App\\Client\\Products\\Products\\Create\\CreateClient",
+        "model": "product"
+    },
+    "products.products.update": {
+        "class": "App\\Client\\Products\\Products\\Update\\UpdateClient",
+        "model": "product"
     }
 }

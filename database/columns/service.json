@@ -35,5 +35,10 @@
         "controller": "Registration",
         "dir": "Registration",
         "model": "Registration"
+    },
+    "Products/products": {
+        "controller": "Products",
+        "dir": "Products",
+        "model": "Product"
     }
 }
