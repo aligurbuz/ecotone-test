@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -102,7 +102,8 @@ class ProductsRepository extends EloquentRepository implements ProductsRepositor
 	 */
 	public function eventFireAfterCreate(array $result = [], array $clientData = []): void
 	{
-		//
+		picqer($result)->endpoint('products');
+            //->post();
 	}
 
 
@@ -115,6 +116,7 @@ class ProductsRepository extends EloquentRepository implements ProductsRepositor
 	 */
 	public function eventFireAfterUpdate(array $result = [], array $clientData = []): void
 	{
-		//
+		picqer($result)->endpoint('products');
+        //->put();
 	}
 }
