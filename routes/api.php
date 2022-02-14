@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Stocks\StocksController;
 use App\Http\Controllers\Api\Products\ProductsController;
 use App\Http\Controllers\Api\Registration\RegistrationController;
 use App\Http\Controllers\Api\User\PhotosController;
@@ -39,6 +40,10 @@ Route::get('testing',function(){
 });
 
 Route::middleware([])->group(function(){
+
+    Route::get('/stocks', [StocksController::class,'get']);
+    Route::post('/stocks', [StocksController::class,'create']);
+    Route::put('/stocks', [StocksController::class,'update']);
 
     Route::get('/products', [ProductsController::class,'get']);
     Route::post('/products', [ProductsController::class,'create']);

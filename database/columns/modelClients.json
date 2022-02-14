@@ -22,5 +22,10 @@
         "get": "App\\Client\\Products\\Products\\Get\\GetClient",
         "create": "App\\Client\\Products\\Products\\Create\\CreateClient",
         "update": "App\\Client\\Products\\Products\\Update\\UpdateClient"
+    },
+    "Stock": {
+        "get": "App\\Client\\Stocks\\Stocks\\Get\\GetClient",
+        "create": "App\\Client\\Stocks\\Stocks\\Create\\CreateClient",
+        "update": "App\\Client\\Stocks\\Stocks\\Update\\UpdateClient"
     }
 }

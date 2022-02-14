@@ -40,5 +40,10 @@
         "controller": "Products",
         "dir": "Products",
         "model": "Product"
+    },
+    "Stocks/stocks": {
+        "controller": "Stocks",
+        "dir": "Stocks",
+        "model": "Stock"
     }
 }

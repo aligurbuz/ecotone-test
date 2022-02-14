@@ -36,7 +36,8 @@
         "Permission"
     ],
     "product_code": [
-        "Product"
+        "Product",
+        "Stock"
     ],
     "hs_code": [
         "Product"
@@ -49,6 +50,9 @@
     ],
     "role_app_code": [
         "Role"
+    ],
+    "stock_code": [
+        "Stock"
     ],
     "super_admin_code": [
         "SuperAdmin"

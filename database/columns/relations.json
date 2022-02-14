@@ -25,6 +25,7 @@
         "Product",
         "Registration",
         "Role",
+        "Stock",
         "SuperAdmin",
         "TableChange",
         "Timezone",
@@ -41,7 +42,8 @@
         "Localization"
     ],
     "Product": [
-        "Localization"
+        "Localization",
+        "Stock"
     ],
     "Registration": [
         "Localization"
@@ -49,6 +51,10 @@
     "Role": [
         "Localization",
         "User"
+    ],
+    "Stock": [
+        "Product",
+        "Localization"
     ],
     "SuperAdmin": [
         "User",

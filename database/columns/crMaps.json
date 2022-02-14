@@ -34,5 +34,17 @@
     "products.products.update": {
         "class": "App\\Client\\Products\\Products\\Update\\UpdateClient",
         "model": "product"
+    },
+    "stocks.stocks.get": {
+        "class": "App\\Client\\Stocks\\Stocks\\Get\\GetClient",
+        "model": "stock"
+    },
+    "stocks.stocks.create": {
+        "class": "App\\Client\\Stocks\\Stocks\\Create\\CreateClient",
+        "model": "stock"
+    },
+    "stocks.stocks.update": {
+        "class": "App\\Client\\Stocks\\Stocks\\Update\\UpdateClient",
+        "model": "stock"
     }
 }

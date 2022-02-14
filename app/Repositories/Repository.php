@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Repositories;
 
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Stocks\Contracts\StocksRepositoryContract;
 use App\Repositories\Resources\Products\Contracts\ProductsRepositoryContract;
 use App\Repositories\Resources\Registration\Contracts\RegistrationRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
@@ -27,6 +28,16 @@ use App\Repositories\Resources\Countries\Contracts\CountriesRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get stock repository instance
+     *
+     * @return StocksRepositoryContract
+     */
+    public static function stock() : StocksRepositoryContract
+    {
+        return app()->get(StocksRepositoryContract::class);
+    }
+    
     /**
      * get product repository instance
      *

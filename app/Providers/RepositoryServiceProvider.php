@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Resources\Stocks\Contracts\StocksRepositoryContract;
+use App\Repositories\Resources\Stocks\StocksRepository;
 use App\Repositories\Resources\Products\Contracts\ProductsRepositoryContract;
 use App\Repositories\Resources\Products\ProductsRepository;
 use App\Repositories\Resources\Registration\Contracts\RegistrationRepositoryContract;
@@ -61,6 +63,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(PhotosRepositoryContract::class,PhotosRepository::class);
         $this->app->bind(RegistrationRepositoryContract::class,RegistrationRepository::class);
         $this->app->bind(ProductsRepositoryContract::class,ProductsRepository::class);
+        $this->app->bind(StocksRepositoryContract::class,StocksRepository::class);
         //newBind
     }
 
