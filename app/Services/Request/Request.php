@@ -47,10 +47,11 @@ class Request
     /**
      * Request constructor.
      * @param array $data
+     * @param string|null $config
      */
-    public function __construct(array $data = [])
+    public function __construct(array $data = [],?string $config = null)
     {
-        $this->url              = config('app.apiUrl');
+        $this->url              = $config ?? config('app.apiUrl');
         $this->data             = $data;
         $this->apikey           = config('app.apiKey');
         $this->contentType      = 'application/json';

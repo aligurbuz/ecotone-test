@@ -9,6 +9,7 @@ return [
     'apikeyString' => 'apikey',
     'defaultApiResponseFormatter' => 'json',
     'productBaseUrl' => env('productBaseUrl','productBaseUrl'),
+    'apiUrl' => env('API_URL','API_URL'),
 
     'allowedClientKeys' => [
         'range',
