@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -102,7 +102,8 @@ class StocksRepository extends EloquentRepository implements StocksRepositoryCon
 	 */
 	public function eventFireAfterCreate(array $result = [], array $clientData = []): void
 	{
-		//
+		picqer($result)->endpoint('products/'.$result['idProduct'].'/stock/'.$result['idwarehouse']);
+            //->post();
 	}
 
 
@@ -115,6 +116,7 @@ class StocksRepository extends EloquentRepository implements StocksRepositoryCon
 	 */
 	public function eventFireAfterUpdate(array $result = [], array $clientData = []): void
 	{
-		//
+        picqer($result)->endpoint('products/'.$result['idProduct'].'/stock/'.$result['idwarehouse']);
+        //->update();
 	}
 }
